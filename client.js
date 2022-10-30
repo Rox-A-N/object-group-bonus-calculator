@@ -35,6 +35,10 @@ const employees = [
 console.log('array of employee data: ',  employees );
 
 
+// 
+console.log(employees[0]);
+
+
 // YOU SHOULD NOT NEED TO CHANGE ANYTHING ABOVE THIS POINT
 
 // This problem is massive! Break the problem down, take small steps, and test as you go.
@@ -48,10 +52,34 @@ console.log('array of employee data: ',  employees );
 
 // This function will calculate 1 employee's bonus!
 //
-function calculateIndividualEmployeeBonus( employee ) {  
+//function calculateIndividualEmployeeBonus( employee ) {  
   // your logic here
-  
+  // This function will calculate 1 employee's bonus!
+//
+let newEmployees = new Map([
+  ['bonusPercentage', 54]
+])
+console.log(newEmployees)
+function calculateIndividualEmployeeBonus( staffMember ) {  
+  for (let i = 0; i < employees.length; i++) {
+    console.log(employees[i])
+    }
+  }
   
   // return new object with bonus results
 
-}
+console.log(calculateIndividualEmployeeBonus());
+
+// rating of 2 percent or below
+function doYouGetBonus(employee){
+for(employee of employees){
+  let employees = [];
+  if(employees.reviewRating < 2){
+    return `you get no bonus!`
+  }
+} console.log(employee);
+} // End of doYouGetBonus function
+
+  
+  // return new object with bonus results
+
